@@ -17,8 +17,8 @@ h3{
   margin:100px auto;
   height: 500px;
   width: 300px;
-  background: #44bd32;
-  box-shadow: 5px -2px 5px 5px #111;
+  background: #223449;
+  box-shadow: 3px 2px 8px 7px rgb(77, 78, 36);
   margin:auto;
  
 }
@@ -30,9 +30,10 @@ h1{
 }
 .txtpantalla{
   width: 90%;
+  height:45px;
   background:black;
   opacity:0.8;
-  font-size: 1.5em;
+  font-size: 2.4em;
   margin:0px auto;
   text-align:right;
   padding:10px;
@@ -41,7 +42,7 @@ h1{
 .teclado{
   height:70%;
   width:95%;
-  margin : 10px auto;
+  margin : 30px auto;
  
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

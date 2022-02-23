@@ -108,7 +108,6 @@ const valorTeclas = [
 const Pantalla = props => {
   return (
     <div id="pantalla">
-      <div id="operaciones" class="txtpantalla">{props.txtOperaciones}</div>
       <div id="display" class="txtpantalla">{props.resultado}</div>
     </div>
   );
@@ -127,7 +126,6 @@ class Calculadora extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      txtOperaciones: '0',
       operacion: [],
       txtResultado: '0'
     }
@@ -141,11 +139,9 @@ class Calculadora extends React.Component {
     let valor = e.target.innerText;
     let resultado = this.state.txtResultado;
     let operacion = this.state.operacion;
-    let txtOPeraciones = this.state.txtOperaciones
     if (valor === 'CLEAR') {
       resultado = '0';
       operacion = [];
-      txtOPeraciones = '0';
       setTimeout(() => {
         boton.className = ' tecla operacion col-2';
       }, 100)
@@ -167,7 +163,6 @@ class Calculadora extends React.Component {
     }
     this.setState({
       txtResultado: resultado,
-      txtOPeraciones: txtOPeraciones,
       operacion: operacion
     })
 
@@ -178,7 +173,6 @@ class Calculadora extends React.Component {
       }, 100)
       this.setState(
         {
-          txtOPeraciones: this.state.txtOperaciones + resultado + valor,
           operacion: [...this.state.operacion, resultado, valor],
           txtResultado: '0'
         }
@@ -193,7 +187,6 @@ class Calculadora extends React.Component {
       let valor=eval(resultado);
       this.setState(
         {
-          txtOPeraciones:'0 ',
           operacion: [],
           txtResultado: valor
       }
