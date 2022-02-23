@@ -1,13 +1,86 @@
+* {
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+  margin: 0px;
+  padding: 0px;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background:radial-gradient(#ddd,#aaa);  
+  color:white;
+
+}
+h3{
+  text-align: right;
+  padding :10px;
+  user-select: none;
+}
+.calculadora {
+  margin:100px auto;
+  height: 500px;
+  width: 300px;
+  background: #44bd32;
+  box-shadow: 5px -2px 5px 5px #111;
+  margin:auto;
+ 
+}
+h1{
+  text-align: center;
+  padding:40px;
+  color:#b33939;
+  text-decoration: underline;
+}
+.txtpantalla{
+  width: 90%;
+  background:black;
+  opacity:0.8;
+  font-size: 1.5em;
+  margin:0px auto;
+  text-align:right;
+  padding:10px;
+  border-radius: 2px;  
+}
+.teclado{
+  height:70%;
+  width:95%;
+  margin : 10px auto;
+ 
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;  
+  align-items: center;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.tecla{
+  text-decoration: none;
+  margin: 0 auto;  
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:60px;
+  width:60px;
+  user-select: none;
+  font-size: 1.4em;
+  box-shadow:2px 2px 4px 2px #222;
+  color:#ccc;
+  border-radius: 45%;
+}
+.col-2{
+ grid-column:span 2;
+ width:130px;
+}
+.row-2{
+  grid-row:span 2;
+  height:130px;
+}
+.inactiva{
+  border:1px solid black;  
+  background:#b33939;  
+}
+.operacion{
+  border:1px solid black;  
+  background:#5f3bc3; 
+}
+.activa{
+  border:1px solid #ccc; 
+  background:#5d1818;
 }
